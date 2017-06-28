@@ -1,12 +1,7 @@
 package com.example.android.tourguide;
 
 /**
- * Created by me74 on 30.05.2017.
- */
-
-/**
- * {@link Location} represents a vocabulary word that the user wants to learn.
- * It contains a default translation, a Miwok translation, and an image for that word.
+ * {@link Location} represents a location to show in app. It contains a title, a description, an address and an image (if applicable)
  */
 public class Location {
 
@@ -21,57 +16,71 @@ public class Location {
     /** Desciption of the location */
     private String mLocationDescription;
 
-    /** Audio resource ID for the word */
-    private int mAudioResourceId;
+    /**
+     * Address of the location
+     */
+    private String mLocationAddress;
+
     /**
      * Image resource ID for the location
      */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    /**
-     * Create a new Location object.
-     *
-     * @param locationDescription is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param locationTitle is the word in the Miwok language
-     * @param audioResourceId is the resource ID for the audio file associated with this word
-     */
-    public Location(String locationTitle, String locationDescription, int audioResourceId) {
-        mLocationTitle = locationTitle;
-        mLocationDescription = locationDescription;
-        mAudioResourceId = audioResourceId;
-    }
 
     /**
      * Create a new Location object.
      *
-     * @param locationDescription is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param locationTitle is the word in the Miwok language
-     * @param imageResourceId is the drawable resource ID for the image associated with the word
-     * @param audioResourceId is the resource ID for the audio file associated with this word
+     * @param locationTitle is the name of the location
+     * @param locationDescription is the description of the location, if applicable
+     * @param locationAddress is the address of the location
      */
-    public Location(String locationTitle, String locationDescription, int imageResourceId,
-                    int audioResourceId) {
+    public Location(String locationTitle, String locationDescription, String locationAddress) {
+        // Check if there is no description. If not, then set the description to the address
+        if (locationDescription.equals("")) {
+            locationDescription = locationAddress;
+        }
+        mLocationTitle = locationTitle;
+        mLocationDescription = locationDescription;
+        mLocationAddress = locationAddress;
+    }
+
+    /**
+     * Create a new Location object.
+     * @param locationTitle is the name of the location
+     * @param locationDescription is the description of the location, if applicable
+     * @param locationAddress is the address of the location
+     * @param imageResourceId is the drawable resource ID for the image associated with the word
+     */
+    public Location(String locationTitle, String locationDescription, String locationAddress, int imageResourceId) {
+        // Check if there is no description. If not, then set the description to the address
+        if (locationDescription.equals("")) {
+            locationDescription = locationAddress;
+        }
         mLocationTitle = locationTitle;
         mLocationDescription = locationDescription;
         mImageResourceId = imageResourceId;
-        mAudioResourceId = audioResourceId;
+        mLocationAddress = locationAddress;
     }
 
-
     /**
-     * Get the Miwok translation of the word.
+     * Get the title of the location
      */
     public String getLocationTitle() {
         return mLocationTitle;
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the description of the location
      */
     public String getLocationDescription() {
         return mLocationDescription;
+    }
+
+    /**
+     * Get the address of the location
+     */
+    public String getLocationAddress() {
+        return mLocationAddress;
     }
 
 
@@ -89,10 +98,5 @@ public class Location {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
-    /**
-     * Return the audio resource ID of the word.
-     */
-    public int getAudioResourceId() {
-        return mAudioResourceId;
-    }
+
 }

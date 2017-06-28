@@ -12,9 +12,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by me74 on 30.05.2017.
- */
 
 public class LocationAdapter extends ArrayAdapter<Location> {
 
@@ -55,16 +52,16 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         Location currentLocationObject = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID miwok_text_view
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
+        TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
         // Get the Miwok translation from the currentWord object and set this text on
         // the Miwok TextView.
-        miwokTextView.setText(currentLocationObject.getLocationTitle());
+        titleTextView.setText(currentLocationObject.getLocationTitle());
 
         // Find the TextView in the list_item.xml layout with the ID default_text_view
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
+        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
         // Get the default translation from the currentWord object and set this text on
         // the default TextView.
-        defaultTextView.setText(currentLocationObject.getLocationDescription());
+        descriptionTextView.setText(currentLocationObject.getLocationDescription());
 
         // Find the ImageView in the list_item.xml layout with the ID image
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
