@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguide.MainActivity">
+
+    <!-- Hotels category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_hotels">
+
+        <TextView
+            android:id="@+id/hotels"
+            style="@style/CategoryStyle"
+            android:text="@string/category_hotels" />
+    </FrameLayout>
+
+    <!-- Restaurants category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_restaurants">
+
+        <TextView
+            android:id="@+id/restaurants"
+            style="@style/CategoryStyle"
+            android:text="@string/category_restaurants" />
+    </FrameLayout>
+
+    <!-- Sights category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_sights">
+
+        <TextView
+            android:id="@+id/sights"
+            style="@style/CategoryStyle"
+            android:text="@string/category_sights" />
+    </FrameLayout>
+
+    <!-- Events category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_events">
+
+        <TextView
+            android:id="@+id/events"
+            style="@style/CategoryStyle"
+            android:text="@string/category_events" />
+    </FrameLayout>
+</LinearLayout>
