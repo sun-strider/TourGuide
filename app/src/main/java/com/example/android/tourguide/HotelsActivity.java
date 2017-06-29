@@ -8,9 +8,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 public class HotelsActivity extends AppCompatActivity {
+
+    private int mNumberOfLocations = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,16 @@ public class HotelsActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location(getString(R.string.title_01), getString(R.string.description_01), getString(R.string.address_01), R.drawable.number_one));
+
+        // Add the locations to the list
+        for (int count = 1; count <= mNumberOfLocations; count++) {
+            int titleId = makeResourceIdFromCounter("title_", count);
+            int descriptionId = makeResourceIdFromCounter("description_", count);
+            int addressId = makeResourceIdFromCounter("address_", count);
+            int drawableId = makeResourceIdFromCounter("drawable_", count);
+
+            locations.add(new Location(getString(titleId), getString(descriptionId), getString(addressId), R.drawable.number_one));
+        }
         locations.add(new Location("two", "otiiko", "Piazza Ascona", R.drawable.number_two));
         locations.add(new Location("two", "otiiko", "Piazza Ascona", R.drawable.number_two));
         locations.add(new Location("two", "otiiko", "Piazza Ascona", R.drawable.number_two));
@@ -70,5 +82,21 @@ public class HotelsActivity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
+    }
+
+    // Method to get an resource id out of a string and an int value
+    public int makeResourceIdFromCounter(String string, int counter) {
+        String resource = string + String.valueOf(counter);
+        int id = 0;
+        try {
+            Class myClass = R.id.class;
+            Field field = myClass.getField(resource);
+            id = field.getInt(null);
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        return id;
     }
 }
