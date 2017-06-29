@@ -19,38 +19,38 @@
     <!-- ............. Here follow all the locations for the 'Hotels' category ................ -->
 
     <!-- A location title -->
-    <string name="title_1">Hotel Piazza</string>
+    <string name="title_01">Hotel Piazza</string>
     <!-- A location description -->
-    <string name="description_1"></string>
+    <string name="description_01"></string>
     <!-- A location address -->
-    <string name="address_1">Piazza Giuseppe Motta 29 \n6612 Ascona</string>
+    <string name="address_01">Piazza Giuseppe Motta 29 \n6612 Ascona</string>
 
     <!-- A location title -->
-    <string name="title_2">Seven Boutique Hotel</string>
+    <string name="title_02">Seven Boutique Hotel</string>
     <!-- A location description -->
-    <string name="description_2"></string>
+    <string name="description_02"></string>
     <!-- A location address -->
-    <string name="address_2">Piazza Giuseppe Motta 21 \n6612 Ascona</string>
+    <string name="address_02">Piazza Giuseppe Motta 21 \n6612 Ascona</string>
 
     <!-- A location title -->
-    <string name="title_3">Casa delle Olive</string>
+    <string name="title_03">Hotel New Elvezia</string>
     <!-- A location description -->
-    <string name="description_3"></string>
+    <string name="description_03"></string>
     <!-- A location address -->
-    <string name="address_3">Vicolo delle Olive 11 \n6612 Ascona</string>
+    <string name="address_03">Piazza Giuseppe Motta 15 \n6612 Ascona</string>
 
     <!-- A location title -->
-    <string name="title_4">Casa delle Olive</string>
+    <string name="title_04">Casa delle Olive</string>
     <!-- A location description -->
-    <string name="description_4"></string>
+    <string name="description_04"></string>
     <!-- A location address -->
-    <string name="address_4">Vicolo delle Olive 11 \n6612 Ascona</string>
+    <string name="address_04">Vicolo delle Olive 11 \n6612 Ascona</string>
 
     <!-- A location title -->
-    <string name="title_5">Hotel - Restaurant Antica Posta</string>
+    <string name="title_05">Hotel - Restaurant Antica Posta</string>
     <!-- A location description -->
-    <string name="description_5"></string>
+    <string name="description_05"></string>
     <!-- A location address -->
-    <string name="address_5">Contrada Maggiore 4 \n6612 Ascona</string>
+    <string name="address_05">Contrada Maggiore 4 \n6612 Ascona</string>
 
 </resources>
