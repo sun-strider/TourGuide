@@ -8,7 +8,7 @@
     <color name="primary_dark_color">#1a237e</color>
 
     <!-- Background color for app -->
-    <color name="background">#f9fbe7</color>
+    <color name="background">#e0f2f1</color>
 
     <!-- Background color for the hotels category -->
     <color name="category_hotels">#0097a7</color>

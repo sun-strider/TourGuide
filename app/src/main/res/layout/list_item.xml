@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/background"
     android:minHeight="@dimen/list_item_height">
 
@@ -12,13 +12,12 @@
         android:layout_height="@dimen/list_item_height"
         android:layout_centerVertical="true"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/scenery_icon" />
 
     <RelativeLayout
         android:id="@+id/text_container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/image"
@@ -37,7 +36,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            tools:text="lutti" />
+            tools:text="@string/title_01" />
 
         <TextView
             android:id="@+id/description_text_view"
@@ -49,7 +48,7 @@
             android:paddingTop="@dimen/activity_vertical_margin_small"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="one" />
+            tools:text="@string/address_01" />
 
 
         <ImageView
