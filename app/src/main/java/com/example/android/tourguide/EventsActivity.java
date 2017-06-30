@@ -19,11 +19,11 @@ public class EventsActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("Where are you going?", "minto wuksus", "Zurich"));
-        locations.add(new Location("What is your name?", "tinnә oyaase'nә", "Zurich"));
-        locations.add(new Location("My name is...", "oyaaset...", "Zurich"));
-        locations.add(new Location("How are you feeling?", "michәksәs?", "Zurich"));
-        locations.add(new Location("I’m feeling good.", "kuchi achit", "Zurich"));
+        locations.add(new Location(getString(R.string.event_title_01), getString(R.string.event_description_01), getString(R.string.event_address_01), R.drawable.piazza));
+        locations.add(new Location(getString(R.string.event_title_02), getString(R.string.event_description_02), getString(R.string.event_address_02), R.drawable.seven_boutique));
+        locations.add(new Location(getString(R.string.event_title_03), getString(R.string.event_description_03), getString(R.string.event_address_03), R.drawable.elvezia));
+        locations.add(new Location(getString(R.string.event_title_04), getString(R.string.event_description_04), getString(R.string.event_address_04), R.drawable.casa_oliva));
+        locations.add(new Location(getString(R.string.event_title_05), getString(R.string.event_description_05), getString(R.string.event_address_05), R.drawable.antica_posta));
 
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The

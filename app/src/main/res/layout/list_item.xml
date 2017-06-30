@@ -6,13 +6,6 @@
     android:background="@color/background"
     android:minHeight="@dimen/list_item_height">
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height"
-        android:layout_centerVertical="true"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/scenery_icon" />
 
     <RelativeLayout
         android:id="@+id/text_container"
@@ -26,39 +19,53 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin">
 
+
+        <ImageView
+            android:id="@+id/symbol"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin_small"
+            android:src="@drawable/ic_place_white_36dp" />
+
         <TextView
             android:id="@+id/title_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/symbol"
             android:gravity="center_vertical"
             android:paddingBottom="@dimen/activity_vertical_margin_small"
             android:paddingTop="@dimen/activity_vertical_margin_small"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             android:textStyle="bold"
-            tools:text="@string/title_01" />
+            tools:text="@string/hotel_title_01" />
 
         <TextView
             android:id="@+id/description_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/title_text_view"
+            android:layout_toLeftOf="@id/symbol"
             android:gravity="top"
             android:paddingBottom="@dimen/activity_vertical_margin_small"
             android:paddingTop="@dimen/activity_vertical_margin_small"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="@string/address_01" />
-
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_place_white_36dp" />
+            tools:text="@string/hotel_address_01" />
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/text_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/text_container"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/scenery_icon" />
 
 </RelativeLayout>

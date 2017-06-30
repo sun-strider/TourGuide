@@ -19,12 +19,11 @@ public class RestaurantsActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location("father", "әpә", "Baar", R.drawable.family_father));
-        locations.add(new Location("mother", "әṭa", "Baar", R.drawable.family_mother));
-        locations.add(new Location("son", "angsi", "Baar", R.drawable.family_son));
-        locations.add(new Location("daughter", "tune", "Baar", R.drawable.family_daughter));
-        locations.add(new Location("older brother", "taachi", "Baar", R.drawable.family_older_brother));
-        locations.add(new Location("younger brother", "chalitti", "Baar", R.drawable.family_younger_brother));
+        locations.add(new Location(getString(R.string.restaurant_title_01), getString(R.string.restaurant_description_01), getString(R.string.restaurant_address_01), R.drawable.piazza));
+        locations.add(new Location(getString(R.string.restaurant_title_02), getString(R.string.restaurant_description_02), getString(R.string.restaurant_address_02), R.drawable.seven_boutique));
+        locations.add(new Location(getString(R.string.restaurant_title_03), getString(R.string.restaurant_description_03), getString(R.string.restaurant_address_03), R.drawable.elvezia));
+        locations.add(new Location(getString(R.string.restaurant_title_04), getString(R.string.restaurant_description_04), getString(R.string.restaurant_address_04), R.drawable.casa_oliva));
+        locations.add(new Location(getString(R.string.restaurant_title_05), getString(R.string.restaurant_description_05), getString(R.string.restaurant_address_05), R.drawable.antica_posta));
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
         // adapter knows how to create list items for each item in the list.
