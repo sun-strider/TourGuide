@@ -60,35 +60,38 @@
     <string name="restaurant_title_01">Grotto Baldoria</string>
     <!-- A location description -->
     <string name="restaurant_description_01">You only get one menu and it is always the same, every day, every year.
-        But it is good local food with several courses at a great price and pretty rsutical and good atmosphere</string>
+        But it is good local food with several courses at a great price and pretty rustical and good atmosphere</string>
     <!-- A location address -->
     <string name="restaurant_address_01">Via Sant\'Omobono 9 \n6612 Ascona</string>
 
     <!-- A location title -->
     <string name="restaurant_title_02">Antico Ristorante Borromeo</string>
     <!-- A location description -->
-    <string name="restaurant_description_02"></string>
+    <string name="restaurant_description_02">Nice restaurant with a quite garden.\n
+        Serves great local specialties which can be considered better class, but still good price.</string>
     <!-- A location address -->
     <string name="restaurant_address_02">Via Collegio 16 \n6612 Ascona</string>
 
     <!-- A location title -->
     <string name="restaurant_title_03">Pizzeria Cortile</string>
     <!-- A location description -->
-    <string name="restaurant_description_03"></string>
+    <string name="restaurant_description_03">Cute little Pizzeria in an small town square in the old town of Ascona.\n
+    Pizza is good, and the owner very friendly.</string>
     <!-- A location address -->
     <string name="restaurant_address_03">Contrada Maggiore \n6612 Ascona</string>
 
     <!-- A location title -->
     <string name="restaurant_title_04">Ristorante Seven</string>
     <!-- A location description -->
-    <string name="restaurant_description_04"></string>
+    <string name="restaurant_description_04">Hip restaurant, right by the side of the lake. Serves upper class food, has a nice calm atmosphere.</string>
     <!-- A location address -->
     <string name="restaurant_address_04">Via Moscia 2 \n6612 Ascona</string>
 
     <!-- A location title -->
     <string name="restaurant_title_05">Ristorante Grotto Broggini</string>
     <!-- A location description -->
-    <string name="restaurant_description_05"></string>
+    <string name="restaurant_description_05">Good restaurant with a lot of space outside, with stone tables and benches.\n
+    Specialty is the grilled chicken half with a great risotto, but there are also lots of other nice dishes worth a try.</string>
     <!-- A location address -->
     <string name="restaurant_address_05">Via S. Materno 18 \n6616 Losone</string>
 
@@ -98,35 +101,40 @@
     <!-- A location title -->
     <string name="sight_title_01">Lago Maggiore</string>
     <!-- A location description -->
-    <string name="sight_description_01"></string>
+    <string name="sight_description_01">Beautiful Lake among the southern Mountains\n
+    A boat can be rented to skim around, or it is possible to catch a tour ship</string>
     <!-- A location address -->
     <string name="sight_address_01">Ascona NLM \n6612 Ascona</string>
 
     <!-- A location title -->
-    <string name="sight_title_02">Parco botanico del Cantone Ticino</string>
+    <string name="sight_title_02">Isola di Brissago</string>
     <!-- A location description -->
-    <string name="sight_description_02"></string>
+    <string name="sight_description_02">A nice small island in the Lago Maggiore.\n
+        On the island is the manor of the former owners of the island, in which there is a hotel and a restaurant. Also as part of the manor there is botanical garden of this area\n
+        One can reach the island with the ships departing from different locations on the main land.</string>
     <!-- A location address -->
     <string name="sight_address_02">Isole di Brissago \nRonco sopra Ascona</string>
 
     <!-- A location title -->
     <string name="sight_title_03">Cardada Mountain</string>
     <!-- A location description -->
-    <string name="sight_description_03"></string>
+    <string name="sight_description_03">A mountain close to Locarno. The top can be reached by cable car, or if one is fit enough, by hiking.</string>
     <!-- A location address -->
     <string name="sight_address_03">Cardada Impianti Turistici \nVia Santuario 5 \6644 Orselina</string>
 
     <!-- A location title -->
     <string name="sight_title_04">Lago di Vogorno</string>
     <!-- A location description -->
-    <string name="sight_description_04">Diga di Verzasca</string>
+    <string name="sight_description_04">Lake which is formed by the largest dam in Switzerland.\n
+        From the dam one has a great view down the vally, and the more daring can make the famous bungy jump from the Bond film \'Golden Eye\'</string>
     <!-- A location address -->
     <string name="sight_address_04">Lago di Vogorno \nDiga di Verzasca</string>
 
     <!-- A location title -->
     <string name="sight_title_05">Ponte dei Salti \nValle Verzasca</string>
     <!-- A location description -->
-    <string name="sight_description_05"></string>
+    <string name="sight_description_05">A mountain river, which has crystal clear water and formidable washed out stone formations.\n
+    Very popular to go sunbathing and take a refreshing dip in the icy cool water or just chill.</string>
     <!-- A location address -->
     <string name="sight_address_05">Ponte dei Salti \n6633 Lavertezzo</string>
 

@@ -11,14 +11,14 @@
     <color name="background">#e0f2f1</color>
 
     <!-- Background color for the hotels category -->
-    <color name="category_hotels">#0097a7</color>
+    <color name="category_hotels">#303f9f</color>
 
     <!-- Background color for the restaurants category -->
-    <color name="category_restaurants">#01579b</color>
+    <color name="category_restaurants">#5d4037</color>
 
     <!-- Background color for the sights category -->
     <color name="category_sights">#388e3c</color>
 
     <!-- Background color for the events category -->
-    <color name="category_events">#ff6f00</color>
+    <color name="category_events">#f57c00</color>
 </resources>
